@@ -11,14 +11,14 @@ export const ResultContextProvider = ({children}) => {
     //is loading to check if its still loading initially false
     const[isLoading,setIsLoading] = useState(false);
     //we need the searach term that i am passign as  a param to api
-    const[searchTerm,setSearchTerm] = useState('');
+    const[searchTerm,setSearchTerm] = useState('webdevIsaac');
 
 
     //here URL means the ROutes that i have described that is the image,video,news etc
     const getResults = async (type) => {
         setIsLoading(true);
         //no axios for now like the sira quote generatoe
-        const response = await fetch(`${baseUrl}/${type}`, {
+        const response = await fetch(`${baseUrl}${type}`, {
             method: "GET",
             //headers available with the api 
             headers: {
@@ -30,7 +30,6 @@ export const ResultContextProvider = ({children}) => {
         });
 
         const data = await response.json();
-        console.log(data);
         setResults(data);
         setIsLoading(false);
     }
