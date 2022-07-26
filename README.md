@@ -4,6 +4,11 @@ All the Functionalities and results are fetched from the GoogleAPI Provided from
 
 with Use State and Tailwind class DarkMode is available with al the Pages of the Site 
 
+Deployments :
+https://isearchengine.herokuapp.com/
+
+https://isearcher.netlify.app/
+
 Run npm install to install my Code
 
 Specail Thanks to StackOverflow COmmunity and Adrian & Google and Myself for putting in Work to complete this project.
