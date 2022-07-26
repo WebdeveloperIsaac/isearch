@@ -11,7 +11,7 @@ export const ResultContextProvider = ({children}) => {
     //is loading to check if its still loading initially false
     const[isLoading,setIsLoading] = useState(false);
     //we need the searach term that i am passign as  a param to api
-    const[searchTerm,setSearchTerm] = useState('webdevIsaac');
+    const[searchTerm,setSearchTerm] = useState('Isaac the Web Developer');
 
 
     //here URL means the ROutes that i have described that is the image,video,news etc
